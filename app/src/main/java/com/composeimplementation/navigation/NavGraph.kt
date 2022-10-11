@@ -8,9 +8,7 @@ import androidx.navigation.NavType
 import androidx.navigation.compose.NavHost
 import androidx.navigation.compose.composable
 import androidx.navigation.navArgument
-import com.composeimplementation.screens.Login
-import com.composeimplementation.screens.SplashScreen
-import com.composeimplementation.screens.WelcomeScreen
+import com.composeimplementation.screens.*
 
 // NavigationHost File
 @Composable
@@ -30,6 +28,12 @@ fun setupNavGraph(navController: NavHostController){
             route =Screen.Login.route
         ){
             Login(context = LocalContext.current, navController = navController)
+        }
+
+        composable(
+            route =  Screen.ForgotPassword.route
+        ){
+            ForgotPasswordScreen(context = LocalContext.current, navController = navController)
         }
 
         composable(

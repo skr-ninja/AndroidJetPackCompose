@@ -4,4 +4,7 @@
     <string name="user_name">User Name</string>
     <string name="password">Enter Password</string>
     <string name="login">Login</string>
+    <string name="forgot_password">Forgot Password?</string>
+    <string name="forgot_pswd">Forgot Password</string>
+    <string name="sendOtp">Send OTP</string>
 </resources>

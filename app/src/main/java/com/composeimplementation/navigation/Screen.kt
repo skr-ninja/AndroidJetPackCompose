@@ -7,6 +7,7 @@ sealed class Screen(val route: String){
     object SplashScreen:Screen("splash_screen")
     // Screen Holder Class
     object Login:Screen(route = "login_screen")
+    object ForgotPassword: Screen(route = "forgot_password")
     object WelcomeScreen: Screen(route = "welcome_screen/{$ARGUMENT_KEY1}/{$ARGUMENT_KEY2}"){
 //        fun passName(name: String): String{
 //            // this.route is written to avoid writing welcome_screen/ again and again

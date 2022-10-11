@@ -74,10 +74,15 @@ fun Login(context: Context, navController: NavController) {
                 leadingIcon = { Icon(Icons.Default.Info, contentDescription = "password") },
                 modifier = Modifier
                     .fillMaxWidth()
-                    .padding(10.dp),
+                    .padding(top = 10.dp, bottom = 5.dp, start = 10.dp, end = 10.dp),
                 visualTransformation = PasswordVisualTransformation(),
                 keyboardOptions = KeyboardOptions(keyboardType = KeyboardType.Password)
             )
+
+            Text(stringResource(id = R.string.forgot_password),Modifier.fillMaxWidth().padding(end = 12.dp, bottom = 10.dp).clickable {
+                        navController.navigate(route = Screen.ForgotPassword.route)
+                    },
+            style = TextStyle(color = Color.Black, fontSize = 12.sp, textAlign = TextAlign.End))
 
             OutlinedButton(
                 onClick = { logged(email, password, context)

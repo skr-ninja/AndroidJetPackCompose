@@ -1,0 +1,7 @@
+<resources>
+    <string name="app_name">ComposeImplementation</string>
+    <string name="enter_details">Enter the below Details</string>
+    <string name="user_name">User Name</string>
+    <string name="password">Enter Password</string>
+    <string name="login">Login</string>
+</resources>

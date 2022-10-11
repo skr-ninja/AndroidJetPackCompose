@@ -4,6 +4,7 @@ const val ARGUMENT_KEY1 = "name"
 const val ARGUMENT_KEY2 = "password"
 
 sealed class Screen(val route: String){
+    object SplashScreen:Screen("splash_screen")
     // Screen Holder Class
     object Login:Screen(route = "login_screen")
     object WelcomeScreen: Screen(route = "welcome_screen/{$ARGUMENT_KEY1}/{$ARGUMENT_KEY2}"){

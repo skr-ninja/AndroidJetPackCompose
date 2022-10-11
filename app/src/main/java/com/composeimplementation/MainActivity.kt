@@ -5,6 +5,7 @@ import androidx.activity.ComponentActivity
 import androidx.activity.compose.setContent
 import androidx.navigation.NavHostController
 import androidx.navigation.compose.rememberNavController
+import com.composeimplementation.navigation.bottomNavigation.MainScreen
 import com.composeimplementation.navigation.setupNavGraph
 
 
@@ -19,6 +20,8 @@ class MainActivity : ComponentActivity() {
             // which will handle Navigation in our app
             navController = rememberNavController()
             setupNavGraph(navController = navController)
+
+            MainScreen()
         }
     }
 }

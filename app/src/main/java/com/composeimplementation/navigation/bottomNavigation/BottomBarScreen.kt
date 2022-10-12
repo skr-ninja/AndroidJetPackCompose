@@ -1,10 +1,7 @@
 package com.composeimplementation.navigation.bottomNavigation
 
 import androidx.compose.material.icons.Icons
-import androidx.compose.material.icons.filled.Favorite
-import androidx.compose.material.icons.filled.Home
-import androidx.compose.material.icons.filled.Info
-import androidx.compose.material.icons.filled.Settings
+import androidx.compose.material.icons.filled.*
 import androidx.compose.ui.graphics.vector.ImageVector
 
 sealed class BottomBarScreen(
@@ -14,20 +11,26 @@ sealed class BottomBarScreen(
 ){
     object Login : BottomBarScreen(
             route ="login",
-        title = "Login",
+        title = "Home",
         icon = Icons.Default.Home
     )
 
     object ForgotPassword : BottomBarScreen(
         route ="forgot_password",
-        title = "ForgotPassword",
+        title = "DashBoard",
         icon = Icons.Default.Info
     )
 
     object WelcomeScreen : BottomBarScreen(
         route ="welcome_screen",
-        title = "Welcome Screen",
+        title = "Settings",
         icon = Icons.Default.Settings
+    )
+
+    object SplashScreen: BottomBarScreen(
+        route = "splash_screen",
+        title = "Profile",
+        icon = Icons.Default.Phone
     )
 }
 

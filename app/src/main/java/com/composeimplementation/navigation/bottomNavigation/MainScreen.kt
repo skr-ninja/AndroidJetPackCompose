@@ -25,7 +25,8 @@ fun BottomBar(navController: NavHostController){
 val screens = listOf(
     BottomBarScreen.Login,
     BottomBarScreen.ForgotPassword,
-    BottomBarScreen.WelcomeScreen
+    BottomBarScreen.WelcomeScreen,
+    BottomBarScreen.SplashScreen
 )
 // to observe navbackStackEntry
     val navBackStackEntry by navController.currentBackStackEntryAsState()

@@ -7,6 +7,7 @@ import androidx.navigation.compose.NavHost
 import androidx.navigation.compose.composable
 import com.composeimplementation.screens.ForgotPasswordScreen
 import com.composeimplementation.screens.Login
+import com.composeimplementation.screens.SplashScreen
 import com.composeimplementation.screens.WelcomeScreen
 
 @Composable
@@ -22,6 +23,10 @@ fun BottomNavGraph(navController: NavHostController){
 
         composable(route = BottomBarScreen.WelcomeScreen.route){
             WelcomeScreen(navController = navController)
+        }
+        
+        composable(route = BottomBarScreen.SplashScreen.route){
+            SplashScreen(navController = navController)
         }
     }
 }
